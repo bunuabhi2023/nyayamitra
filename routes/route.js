@@ -34,6 +34,7 @@ router.delete("/delete-case/:id", auth, isAdmin, caseController.deleteCase);
 
 //Enuiry Routes//
 router.post("/enquiry-now", enquiryController.enquiryNow);
+router.get("/get-enquiry-by-id/:id", enquiryController.getEnquiryById);
 router.post("/verify-payment", enquiryController.successPayment);
 
 
