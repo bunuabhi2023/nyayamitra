@@ -16,8 +16,8 @@ const enquiryNow = async(req, res) =>{
 
     try {
         const params = req.body;
-        const razorpayKey = "rzp_live_RFDCf6fNpIDBTl";
-        const razorpaySecret = "EGt4ymeXKGxJ1hTnDr8j0b2j";
+        const razorpayKey = "rzp_test_8bMWGYcmn7AFVM";
+        const razorpaySecret = "HQWffwEDGNsi6T5sJlEVlrm1";
 
         const razorpay = new Razorpay({
             key_id: razorpayKey,
@@ -111,7 +111,7 @@ const enquiryNow = async(req, res) =>{
 
 const successPayment = async(req, res) =>{
     try{
-        const secret = 'EGt4ymeXKGxJ1hTnDr8j0b2j';
+        const secret = 'HQWffwEDGNsi6T5sJlEVlrm1';
 
         const { razorpayOrderId, razorpayPaymentId, razorpaySignature } = req.body;
 
