@@ -12,6 +12,25 @@ function hmac_sha256(data, key) {
 }
 
 
+  // Function to get a Enquiry  by ID
+const getEnquiryById = async (req, res) => {
+try {
+    const cases = await Enquiry.findById(req.params.id);
+    if (!cases) {
+    console.log(`Enquiry with ID ${req.params.id} not found`);
+    return res.status(404).json({ error: 'Enquiry not found' });
+    }
+
+
+    res.json(cases);
+} catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: 'Failed to fetch case' });
+}
+}
+
+
+
 const enquiryNow = async(req, res) =>{
 
     try {
