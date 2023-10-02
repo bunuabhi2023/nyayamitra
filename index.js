@@ -14,6 +14,7 @@ app.use(
     cors({
         origin: [
             "http://localhost:3000",
+            "https://nyayamitra-geetanjalichawla.vercel.app"
           ],
           credentials: true,
     })
