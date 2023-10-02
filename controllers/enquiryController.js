@@ -169,5 +169,6 @@ const successPayment = async(req, res) =>{
 
 module.exports = {
     enquiryNow,
-    successPayment
+    successPayment,
+    getEnquiryById
   };
