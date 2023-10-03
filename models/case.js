@@ -14,8 +14,7 @@ const cases = new mongoose.Schema(
         },
         updatedAt:{
             type:Date,
-            required:true,
-            default:Date.now(),
+            required:false
         }
     }
 );

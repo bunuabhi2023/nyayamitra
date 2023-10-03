@@ -115,8 +115,7 @@ const users = new mongoose.Schema(
         },
         updatedAt:{
             type:Date,
-            required:true,
-            default:Date.now(),
+            required:false
         }
     }
 );
