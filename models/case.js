@@ -6,16 +6,10 @@ const cases = new mongoose.Schema(
             type:String,
             required:[true, "please enter case Name"],
             maxLength:255,
-        },
-        createdAt:{
-            type:Date,
-            required:true,
-            default:Date.now(),
-        },
-        updatedAt:{
-            type:Date,
-            required:false
         }
+    },
+    {
+        timestamps:true
     }
 );
 

@@ -75,16 +75,10 @@ const enquiries = new mongoose.Schema(
             type:String,
             required:false,
             maxLength:800,
-        },
-        createdAt:{
-            type:Date,
-            required:true,
-            default:Date.now(),
-        },
-        updatedAt:{
-            type:Date,
-            required:false
         }
+    },
+    {
+        timestamps:true
     }
 );
 
